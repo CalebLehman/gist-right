@@ -1,4 +1,4 @@
-from gistright import get_gists
+from gistright.helper import get_gists
 
 def add_parser(subparsers):
     parser = subparsers.add_parser(

@@ -1,4 +1,4 @@
-from gistright import GistObj, load_from_global_gist, dump_to_global_gist, create_gist
+from gistright.helper import GistObj, load_from_global_gist, dump_to_global_gist, create_gist
 
 def add_parser(subparsers):
     parser = subparsers.add_parser(

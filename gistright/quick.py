@@ -1,5 +1,5 @@
 import sys
-from gistright import GistObj, GistFile, create_gist
+from gistright.helper import GistObj, GistFile, create_gist
 
 def add_parser(subparsers):
     parser = subparsers.add_parser(

@@ -1,5 +1,5 @@
 import textwrap
-from gistright import get_gist
+from gistright.helper import get_gist
 
 def add_parser(subparsers):
     parser = subparsers.add_parser(
