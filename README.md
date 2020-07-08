@@ -23,44 +23,44 @@ commands. The intended usage is
 * View and clone existing gists (at which point, standard Git commands
   can be used)
 
-## `gist quick filename [-d|--description description] [-p|--public]`
+### `gist quick filename [-d|--description description] [-p|--public]`
 
 Adds `stdin` as a file with name `filename` to a new gist and pushes it.
 Does not affect the current *global* gist.
 
-## `gist status`
+### `gist status`
 
 Display the files in the current global gist.
 
-## `gist mk filename`
+### `gist mk filename`
 
 Adds `stdin` to the current global gist with name `filename`.
 
-## `gist add [file...]`
+### `gist add [file...]`
 
 Adds a number of files to the current global gist.
 
-## `gist rm [file...]`
+### `gist rm [file...]`
 
 Removes a number of files from the current global gist.
 
-## `gist new [-f|--force]`
+### `gist new [-f|--force]`
 
 Clears the current global gist.
 
-## `gist push [-d|--description description] [-p|--public]`
+### `gist push [-d|--description description] [-p|--public]`
 
 Pushes the current global gist.
 
-## `gist ls`
+### `gist ls`
 
 Lists all gists (id and description).
 
-## `gist show id`
+### `gist show id`
 
 Shows the gist corresponding to `id`.
 
-## `gist clone id path`
+### `gist clone id path`
 
 Clones the gist corresponding to `id` into the directory given by
 `path`. Note that `path` must not be an existing directory and, unlike
