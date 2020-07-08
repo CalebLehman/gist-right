@@ -1,0 +1,30 @@
+#!/usr/bin/python3
+import argparse
+from gistright import quick
+
+commands = {
+    'quick': quick,
+}
+
+class Gist():
+
+    def __init__(self):
+        parser = argparse.ArgumentParser(
+            description='A \'git\'-like tool for gists',
+        )
+
+        command_parsers = parser.add_subparsers(
+            title='command',
+            dest='command',
+            metavar='command',
+            help='Selects between different operations',
+        )
+        command_parsers.required = True
+
+        for name, cmd in commands.items():
+            cmd.add_parser(command_parsers)
+
+        args = parser.parse_args()
+        commands[args.command].run(args)
+
+Gist()
